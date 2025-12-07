@@ -39,10 +39,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "serve -s build -l $PORT",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "cd server && npm run dev",
     "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -67,6 +71,7 @@
     "concurrently": "^8.0.1",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "serve": "^14.2.5",
     "tailwindcss": "^3.2.7"
   }
 }
