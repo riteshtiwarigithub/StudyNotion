@@ -3,6 +3,9 @@
   "description": "This is the client side of the StudyNotion App",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
     "@reduxjs/toolkit": "^1.9.5",
@@ -28,7 +31,7 @@
     "react-rating-stars-component": "^2.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "^0.0.0",
+    "react-scripts": "5.0.1",
     "react-super-responsive-table": "^5.2.1",
     "react-type-animation": "^3.0.1",
     "showdown": "^2.1.0",
@@ -39,14 +42,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "serve -s build -l $PORT",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
-  },
-  "engines": {
-    "node": ">=16.0.0"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -71,7 +68,6 @@
     "concurrently": "^8.0.1",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "serve": "^14.2.5",
     "tailwindcss": "^3.2.7"
   }
 }
