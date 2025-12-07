@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://your-frontend-url.onrender.com", "http://localhost:3000"],
+    origin: ["https://studynotion-frontend-m3lk.onrender.com", "http://localhost:3000"],
     credentials: true,
   })
 );
